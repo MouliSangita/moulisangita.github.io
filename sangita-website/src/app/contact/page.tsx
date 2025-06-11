@@ -149,7 +149,7 @@ export default function Contact() {
             Get In Touch
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            I'd love to hear from you! Whether you have a project in mind, want to collaborate, 
+            I&apos;d love to hear from you! Whether you have a project in mind, want to collaborate, 
             or just want to say hello, feel free to reach out.
           </p>
         </motion.div>
@@ -159,10 +159,10 @@ export default function Contact() {
           <motion.div variants={itemVariants} className="space-y-8">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
-                Let's Connect
+                Let&apos;s Connect
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-8">
-                I'm always open to discussing new opportunities, creative projects, 
+                I&apos;m always open to discussing new opportunities, creative projects, 
                 or potential collaborations.
               </p>
             </div>
@@ -285,7 +285,7 @@ export default function Contact() {
                     onChange={handleInputChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors duration-300"
-                    placeholder="What's this about?"
+                    placeholder="What&apos;s this about?"
                   />
                 </motion.div>
 

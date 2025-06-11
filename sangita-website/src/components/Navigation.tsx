@@ -17,7 +17,7 @@ const navItems = [
 export function Navigation() {
   const [mounted, setMounted] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
-  const { theme, setTheme, resolvedTheme } = useTheme()
+  const { setTheme, resolvedTheme } = useTheme()
   const pathname = usePathname()
 
   useEffect(() => {

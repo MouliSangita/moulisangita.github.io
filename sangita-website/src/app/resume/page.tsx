@@ -4,22 +4,17 @@ import { motion } from 'framer-motion'
 import { 
   Code, 
   Database, 
-  Cloud, 
   Monitor, 
   Briefcase, 
   GraduationCap, 
-  Github, 
-  ExternalLink,
   Calendar,
   MapPin,
   Trophy,
   Cpu,
   BarChart3,
-  Globe,
   Smartphone,
   Download
 } from 'lucide-react'
-import Link from 'next/link'
 
 export default function Resume() {
   const containerVariants = {
@@ -319,7 +314,7 @@ export default function Resume() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-600 dark:text-gray-300 mb-4">
                         <div>
                           <p><strong>Major:</strong> {edu.major}</p>
-                          <p><strong>Track:</strong> {edu.track}</p>
+                          <p><strong>Track:</strong> {edu.track && edu.track.replace("'", "&apos;")}</p>
                         </div>
                         <div>
                           <p><strong>Minor:</strong> {edu.minor}</p>
@@ -358,7 +353,7 @@ export default function Resume() {
                       </div>
                     )}
                     <p className="text-green-600 dark:text-green-400 font-semibold">
-                      {edu.status}
+                      {edu.status && edu.status.replace("'", "&apos;")}
                     </p>
                   </div>
                 </div>
@@ -415,7 +410,7 @@ export default function Resume() {
                       {job.description.map((item, i) => (
                         <li key={i} className="text-gray-600 dark:text-gray-300 flex items-start gap-2">
                           <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                          <span>{item}</span>
+                          <span>{item.replace("'", "&apos;")}</span>
                         </li>
                       ))}
                     </ul>
@@ -475,7 +470,7 @@ export default function Resume() {
                       {role.description.map((item, i) => (
                         <li key={i} className="text-gray-600 dark:text-gray-300 flex items-start gap-2">
                           <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                          <span>{item}</span>
+                          <span>{item.replace("'", "&apos;")}</span>
                         </li>
                       ))}
                     </ul>

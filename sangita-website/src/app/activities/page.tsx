@@ -5,28 +5,16 @@ import {
   Palette, 
   Heart, 
   Lightbulb, 
-  Camera, 
-  Music, 
-  Book, 
-  Globe,
-  Trophy,
-  Star,
-  Plane,
-  Mountain,
-  Coffee,
-  Target,
-  Brain,
-  Code,
-  Database,
-  Cpu,
-  Stethoscope,
-  Sprout,
-  Eye,
-  Building,
-  Zap,
-  ChefHat,
-  Gamepad2,
-  Users,
+  Target, 
+  Brain, 
+  Code, 
+  Database, 
+  Cpu, 
+  Stethoscope, 
+  Sprout, 
+  Eye, 
+  Building, 
+  ChefHat, 
   Paintbrush
 } from 'lucide-react'
 import { useState, useEffect } from 'react'
@@ -184,7 +172,7 @@ export default function Activities() {
             Activities & Interests
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Beyond coding and academics, here's what fuels my creativity and passion for life.
+            Beyond coding and academics, here&apos;s what fuels my creativity and passion for life.
           </p>
         </motion.div>
 
